@@ -15,7 +15,7 @@ const stateLink = withClientState({
   cache,
   resolvers,
   defaults: {
-    show_type: 'BELOW_15'
+    show_type: 'BELOW_17'
   }
 });
 

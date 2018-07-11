@@ -10,7 +10,7 @@ class App extends Component {
       return <h1>Loading....</h1>;
     }
     const books = allBooksQuery.allBooks.filter(item => {
-      if (showTypeQuery.show_type === 'BELOW_15') {
+      if (showTypeQuery.show_type === 'BELOW_17') {
         return item.price < 17;
       }
       return item.price >= 17;
@@ -23,8 +23,8 @@ class App extends Component {
             {item.title} - ${item.price}
           </h3>
         ))}
-        <button onClick={() => this.changeShow('BELOW_15')}>Below $15</button>
-        <button onClick={() => this.changeShow('ABOVE_15')}>Above $15</button>
+        <button onClick={() => this.changeShow('BELOW_17')}>Below $17</button>
+        <button onClick={() => this.changeShow('ABOVE_17')}>Above $17</button>
       </div>
     );
   }
